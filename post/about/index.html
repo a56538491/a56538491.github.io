@@ -7,7 +7,7 @@
 <title>
     关于 | Gridea
 </title>
-<link rel="shortcut icon" href="http://www.fengjieyb.cn//favicon.ico?v=1565774644717">
+<link rel="shortcut icon" href="http://www.fengjieyb.cn//favicon.ico?v=1565775207672">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -20,6 +20,13 @@
 
 
         
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
 </head>
 
 <body>
@@ -28,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="http://www.fengjieyb.cn/">
-                <img class="avatar" src="http://www.fengjieyb.cn//images/avatar.png?v=1565774644717" alt="">
+                <img class="avatar" src="http://www.fengjieyb.cn//images/avatar.png?v=1565775207672" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -124,7 +131,7 @@
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(http://www.fengjieyb.cn//images/avatar.png?v=1565774644717)">
+        <div class="id_card-avatar" style="background-image: url(http://www.fengjieyb.cn//images/avatar.png?v=1565775207672)">
         </div>
         <h1 class="id_card-title">
             Gridea
@@ -174,6 +181,26 @@
         });
     </script>
     
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '081ce6f9ea8c12b939a5',
+            clientSecret: '280cc8aad90cfedf09b9e134fc332b3c0e8ec24a',
+            repo: 'comment',
+            owner: 'a56538491',
+            admin: ['a56538491'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
 </body>
 
 </html>
